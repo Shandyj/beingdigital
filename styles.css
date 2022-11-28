@@ -1,0 +1,250 @@
+* {
+    background-color: #130F18;
+    color: whitesmoke;
+    font-family: 'Changa', sans-serif;
+    font-weight: 800;
+    padding: none;
+    margin: none;
+}
+
+body {
+    width: 100;
+    font-size: 1em;
+    height: 100%;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 1rem auto;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-icon {
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.home-hero {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15rem;
+}
+
+.home-hero .hero-logo {
+    width: 35rem;
+    height: auto;
+    filter: blur(1rem);
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 250px;
+
+}
+
+.home-hero h1 {
+    z-index: 2;
+    background: none;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.home-hero h2 {
+    font-size: 2rem;
+    line-height: 1;
+    z-index: 2;
+    background: none;
+}
+
+.home-technologies {
+    display: flex;
+    min-height: 40rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.home-technologies .technologies-header {
+    text-align: right;
+    margin-right: 10rem;
+}
+
+.technologies-list li {
+    display: flex;
+    font-size: 2rem;
+    line-height: 1;
+    align-items: center;
+}
+
+.technologies-list li a {
+    margin: 0 2rem;
+}
+
+.home-applications {
+    display: flex;
+    align-items: center;
+
+}
+
+.applications-list {
+    margin-left: 2rem;
+}
+
+.applications-list li {
+    display: flex;
+    font-size: 2rem;
+    line-height: 1;
+    align-items: center;
+}
+
+.applications-list li a {
+    margin: 0 2rem;
+}
+
+.home-applications .applications-header {
+    text-align: left;
+    margin-left: 10rem;
+
+}
+
+.home-applications .applications-header p {
+    font-size: 3.5rem;
+}
+
+.home-contact {
+    min-height: 40rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 0.2fr 2fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Contact-Header Contact-Header"
+        "Contact-Email Contact-Submit"
+        "Message Message";
+}
+
+.home-contact div {
+    font-size: 1.5em;
+
+}
+
+
+.contact-text {
+    grid-area: Contact-Header;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.email-container {
+    padding: 1em 1em;
+    grid-area: Contact-Email;
+}
+
+.email-container label {
+    display: block;
+}
+
+.email-container #email-input {
+    padding: 0 1rem;
+    height: 3.5rem;
+    border-radius: 1em;
+    width: 35rem;
+    font-size: 1.5rem;
+    outline: none;
+    border: 1px solid #bfbfbf;
+}
+.email-container #email-input:is(:focus) {
+    border: 2px solid #4671EA;
+}
+
+
+.submit-container {
+    padding: 1em 1em;
+    grid-area: Contact-Submit;
+    display: flex;
+    justify-content: center;
+
+}
+
+.submit-container .submit-input {
+    align-self: flex-end;
+    width: 15rem;
+    font-size: 1.2em;
+    border-radius: 0.8em;
+    background-color: #18D12B;
+    outline: none;
+}
+
+.submit-container .submit-input:hover{
+    background-color: #F51800   ;
+}
+
+.message-container {
+    padding: 1em 1em;
+    grid-area: Message;
+}
+
+.message-container label {
+    display: block;
+}
+
+/*
+.message-container textarea {
+    width: 100%;
+    min-height: 8em;
+    max-height: 30em;
+    border-radius: 1em;
+    overflow: hidden;
+    outline: none;
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0px;
+}
+*/
+.message-container textarea {
+    width: 97%;
+    resize: none;
+    outline: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 1em;
+    min-height: 15rem;
+    max-height: 30rem;
+    border: 1px solid #bfbfbf;
+}
+
+
+textarea:is(:focus) {
+    padding: 14px;
+    border: 2px solid #4671EA;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0px;
+}

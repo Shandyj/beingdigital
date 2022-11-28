@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@700;800&display=swap" rel="stylesheet">
+    <title>James Shand</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#">
+          <img src="assets/logo300.jpg" class="nav-icon">
+        </a>
+        <ul>
+          <li>
+            <a href="#" class="nav-home">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-projects">Projects</a>
+          </li>
+          <li>
+            <a href="#" class="nav-contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="home-hero">
+          <img src="assets/logo.svg" class="hero-logo">
+          <h1>
+            <span style="color: #7692FF; background: none;">Full Stack</span>
+            <br>
+            Web Developer</h1>
+          <h2>I'm James, your web guy.</h2>
+        </div>
+        <div class="home-technologies">
+          <div class="technologies-header">
+            <p>
+              <span style="color: #F51800; font-size: 5em">Technologies</span>
+              <br>
+              <span style="font-size: 3em;">that I work with</span></p>
+          </div>
+          <ul class="technologies-list">
+            <li>
+              <a href="https://svelte.dev/" class="svelte-icon" target="_blank" rel="noopener noreferrer"><img src="assets/svelte.svg" style="width:1.5em; height: auto;"></a>
+              <p class="svelte-text">Svelte & Kit</p>
+            </li>
+            <li>
+              <a href="https://www.mongodb.com/" class="mongo-icon" target="_blank" rel="noopener noreferrer"><img src="assets/mongo.svg" style="width:1.5em; height: auto;"></a>
+              <p class="mongo-text">MongoDB</p>
+            </li>
+            <li>
+              <a href="https://developers.cloudflare.com/" class="cloudflare-icon" target="_blank" rel="noopener noreferrer"><img src="assets/cloudflare.svg" style="width:1.5em; height: auto;"></a>
+              <p class="cloudflare-text">Cloudflare</p>
+            </li>
+            <li>
+              <a href="https://github.com/" class="github-icon" target="_blank" rel="noopener noreferrer"><img src="assets/github.svg" style="width:1.5em; height: auto;"></a>
+              <p class="github-text">Github</p>
+            </li>
+          </ul>
+        </div>
+        <div class="home-applications">
+          <ul class="applications-list">
+            <li>
+              <a class="ecommerce-icon"><img src="assets/shopify.svg" style="width:1.5em; height: auto;"></a>
+              <p class="ecommerce-text">Ecommerce</p>
+            </li>
+            <li>
+              <a class="blogs-icon"><img src="assets/wordpress.svg" style="width:1.5em; height: auto;"></a>
+              <p class="blogs-text">Blogs</p>
+            </li>
+            <li>
+              <a class="showcases-icon"><img src="assets/showcase.svg" style="width:1.5em; height: auto;"></a>
+              <p class="showcases-text">Showcases</p>
+            </li>
+          </ul>
+          <div class="applications-header">
+            <p>Creating sites
+              <br>
+              that meet
+              <span style="color: #7692FF;">your</span><br>
+              needs</p>
+          </div>
+        </div>
+        <form class="home-contact">
+          <p class="contact-text">Get in
+            <span style="color:#F51800">Touch!</span></p>
+
+          <div class="email-container">
+            <label for="email-input">Email:</label>
+            <!--<textarea id="email-input" name="email-input" required="required" rows="1" max-rows="1"></textarea> -->
+            <input type="text" id="email-input" autofocus>
+
+          </div>
+          <div class="message-container">
+            <label for="message-input">Message:</label>
+            <!-- <input type="text" id="message-input"> -->
+            <textarea id="message-input" name="message-input" required="required"></textarea>
+          </div>
+          <div class="submit-container">
+            <input class="submit-input" type="submit" value="Send">
+          </div>
+
+        </form>
+        <div class="documentary">
+          <p class="documentary-header">Documentary Project</p>
+          <video width="1008" height="567" controls="controls">
+            <source src="movie.mp4" type="video/mp4">
+
+          </video>
+        </div>
+      </div>
+      
+      
+
+      <!--<iframe src="https://tatasmassages.setmore.com/" scrolling="yes" width="100%" height="1000px" frameborder="0"></iframe>  -->
+
+
+      <!-- Start Square Appointments Embed code --><a style=" background-color: #006aff; color: white; height: 40px; text-transform: uppercase; font-family: 'Square Market', 'helvetica neue', helvetica, arial, sans-serif; letter-spacing: 1px; line-height: 38px; padding: 0 28px; border-radius: 3px; font-weight: 500; font-size: 14px; cursor: pointer; display: inline-block; " href="https://squareup.com/appointments/buyer/widget/iyy28yv7rmjpgm/LQ1ZKXHWE4EVX">Book an Appointment</a><!-- End Square Appointments Embed code -->
+
+
+
+
+
+      <footer>
+        <div clas="footer-line"></div>
+        <form>
+          <label for="email-input">Email:</label>
+          <input type="text" id="email-input">
+          <input type="submit" value="Send">
+        </form>
+
+      </footer>
+
+    </div>
+
+    
+  </body>
+<!-- Start Square Appointments Embed Code --><script src='https://squareup.com/appointments/buyer/widget/i3hw54eup84ciu/LQ1ZKXHWE4EVX.js'></script><!-- End Square Appointments Embed Code -->
+  <script>
+    const textarea = document.querySelector("#message-input");
+    textarea.addEventListener("keyup", e => {
+      textarea.style.height = "8rem";
+      let scHeight = e.target.scrollHeight;
+      textarea.style.height = `${scHeight}px`;
+    });
+  </script>
+</html>
