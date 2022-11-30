@@ -34,18 +34,24 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
+    font-size: 1.5rem;
 
 }
 
-nav ul li a {
+ul li a {
     text-decoration: none;
-    font-size: 1.5rem;
+    
 }
 
 .nav-icon {
     width: 4rem;
     height: auto;
     border-radius: 50%;
+}
+
+.header{
+    text-align: center;
+    font-size: 5rem;
 }
 
 .home-hero {
@@ -251,9 +257,53 @@ textarea::-webkit-scrollbar {
 }
 
 
+.documentary{
+    text-align: center;
+    font-size: 3rem;
+}
 
-@media all and (max-width: 600px) {
-    .home-technologies{
-        width: 200px;
-    }
+hr{
+    margin: 6rem 0;
+}
+
+
+footer {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+.copyright{
+    align-self: flex-end;
+}
+
+footer .footer-links{
+    margin: 0 2rem;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin: 0.5rem
+}
+
+/*projects page styling*/
+.audios{
+    text-align: center;
+}
+.audios audio{
+    width: 60%;
+    min-width: 20rem;
+}
+
+/*blog page styling */
+.blogposts {
+    padding: 4rem;
+}
+.blogposts h3{
+    font-size: 1.3rem;
 }
