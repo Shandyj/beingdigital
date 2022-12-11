@@ -11,6 +11,7 @@ body {
     width: 100vw;
     font-size: 1em;
     height: 100%;
+    overflow-x:hidden;
 
 }
 
@@ -65,7 +66,8 @@ ul li a {
 .home-hero .hero-logo {
     width: 35rem;
     height: auto;
-    filter: blur(1rem);
+    border-radius: 50%;
+    filter: blur(1.5rem) brightness(50%);
     position: absolute;
     z-index: 0;
     left: 50%;
@@ -299,6 +301,23 @@ footer .footer-links{
     width: 60%;
     min-width: 20rem;
 }
+.project-1{
+    display: flex;
+    margin: 1rem 1rem;
+}
+
+.project-image img{
+    max-width: 350px;
+    margin-right: 4rem;
+}
+
+.project-content a{
+    text-decoration: none;
+}
+
+
+
+
 
 /*blog page styling */
 .blogposts {
@@ -306,4 +325,12 @@ footer .footer-links{
 }
 .blogposts h3{
     font-size: 1.3rem;
+}
+.blogpost p{
+    font-weight: 600;
+}
+
+
+video {
+    max-width: 100%;
 }
